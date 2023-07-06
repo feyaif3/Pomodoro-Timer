@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+
+    <!-- Font Used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <!-- Icon Useed -->
+    <script src="https://kit.fontawesome.com/51ae58aea6.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    
+
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Pomodoro Timer</h1>
+
+                <!--Setting-->
+            <div class="painel">
+                <p id="work">Work</p>
+                <p id="break">Break</p>
+            </div>
+                <!--Clock-->
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes">25</p>
+                        <p>:</p>
+                        <p id="seconds">00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="control">
+                <button id="start" onclick="start()"><i class="fa-duotone fa-play fa-fade"></i></button>
+
+                <a id="reset" href="index.html"><i class="fa-regular fa-arrow-rotate-left"></i></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
