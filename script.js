@@ -1,7 +1,7 @@
 let workTitle = document.getElementById('work')
 let breakTitle = document.getElementById('break')
 
-let workTime = 40;
+let workTime = 35;
 let breakTime = 5;
 let seconds = "00"
 
