@@ -30,6 +30,28 @@ function start() {
         document.getElementById('seconds').innerHTML = seconds;
 
         seconds = seconds - 1;
+        if(seconds == 0) {
+            workMinutes = workMinutes -1;
+            if(workMinutes == -1){
+                if(breakCount % 2 == 0) {
+                    // start break
+                    workMinutes = breakMinutes;
+                    breakCount++
+
+                    //change the panel
+                    workTitle.classList.remove('active');
+                    breakTitle.classList.add('active');
+                } else {
+                    workMinutes = workTime;
+                    breakCount++
+
+                    //change the panel
+                    breakTitle.classList.remove('active');
+                    workTitle.classList.add('active');
+                }
+            }
+            seconds = 59;
+        }
 
     }
 
