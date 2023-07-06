@@ -1,11 +1,11 @@
 :root {
     font-size: 62%;
 
-    --color-primary: #1c2046;
-    --color-secondary: #cd393e;
+    --color-primary: #000000;
+    --color-secondary: #fff242;
     --color-font: #ffffff;
 
-    --color-shadow: #393e79;
+    --color-shadow: #c8d624;
 }
 
 * {
@@ -23,6 +23,7 @@ html, body {
 
 p, i, h1 {
     color: var(--color-font);
+    
 }
 
 i {
