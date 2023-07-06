@@ -15,6 +15,10 @@ window.onload = () => {
 
 //start timer
 function start() {
+    //change button
+    document.getElementById('start').style.display = "none";
+    document.getElementById('reset').style.display = "block";
+
     // change time
     seconds = 59;
 
